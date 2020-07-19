@@ -28,8 +28,8 @@ var config = {
     },
     output:{
         path: PATHS.dist,        
-        filename: 'js/[name].[hash].js'
-        //publicPath: '/',
+        filename: 'js/[name].[hash].js',
+        publicPath: '/assets/dist/',
     },
     module:{
         rules: [{
@@ -38,7 +38,7 @@ var config = {
                 loader: "file-loader",
                 options: {
                     outputPath: "fonts/",
-                    name: "[name].[contenthash].[ext]",
+                    name: "[name].[ext]",
                     esModule: false
                 }
             }]
@@ -47,8 +47,8 @@ var config = {
     plugins: [
         new CleanWebpackPlugin(),        
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, "test_compilado.php"),
-            template: path.resolve(__dirname, 'templates/test.php'),
+            filename: path.resolve(__dirname, "index.html"),
+            template: path.resolve(__dirname, "templates/index.html"),
             excludeAssets: [/styleVendor.*.js/, /styleLocal.*.js/],
             minify: false,
             inject: true
@@ -87,8 +87,8 @@ module.exports = (env, argv) => {
             use: [{
                 loader: "file-loader",
                 options: {
-                    outputPath: "images/",
-                    name: "[name].[contenthash].[ext]",
+                    outputPath: "img/",
+                    name: "[name].[ext]",
                     esModule: false
                 }
             }]
