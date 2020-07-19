@@ -1,0 +1,4 @@
+node_modules/
+assets/dist/
+temp_backup/
+package.lock.json
