@@ -46,7 +46,7 @@ $.widget.bridge('uibutton', $.ui.button);
 
 import "../../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js";
 import "../../../node_modules/admin-lte/plugins/chart.js/Chart.js";
-import "../../../node_modules/admin-lte/plugins/sparklines/sparkline.js";
+//import "../../../node_modules/admin-lte/plugins/sparklines/sparkline.js";
 
 //import "jquery-sparkline";
 import "../../../node_modules/admin-lte/plugins/jqvmap/jquery.vmap.js";
