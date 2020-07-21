@@ -1,30 +1,39 @@
-//      <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-//      <!-- Ionicons -->
-//--->   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-//          <!-- Tempusdominus Bbootstrap 4 -->
-//          <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-//          <!-- iCheck -->
-//          <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-//          <!-- JQVMap -->
-//          <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-//          <!-- Theme style -->
-//          <link rel="stylesheet" href="dist/css/adminlte.min.css">
-//          <!-- overlayScrollbars -->
-//          <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-//          <!-- Daterange picker -->
-//          <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-//          <!-- summernote -->
-//          <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
-//          <!-- Google Font: Source Sans Pro -->
-//--->      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+// fuentes fontawesome
+// "Kit de erramientas de fuentes e iconos"
+//@import "~admin-lte/plugins/fontawesome-free/css/all.min.css";
+@import "vendor/fontAwesome/fontawesome";
 
-@import "~admin-lte/plugins/fontawesome-free/css/all.min.css";
+// IonIcons
+// Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by the Ionic Framework team.
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+// Tempusdominus Bbootstrap 4
+// "Tempus Dominus is the successor to the very popular Eonasdan/bootstrap-datetimepicker. The plugin provide a robust date and time picker designed to integrate into your Bootstrap project."
 @import "~admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css";
+
+// iCheck
+// "Highly customizable checkboxes and radio buttons for jQuery and Zepto."
 @import "~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css";
+
+// JQVMap
+// "JQVMap is a jQuery plugin that renders Interactive, Clickable Vector Maps. It uses resizable Scalable Vector Graphics (SVG) for modern browsers like Firefox, Safari, Chrome, Opera and Internet Explorer 9."
 @import "~admin-lte/plugins/jqvmap/jqvmap.min.css";
+
+// Theme style
+// "Estilos para la plantilla admin-lte"
 @import "~admin-lte/dist/css/adminlte.min.css";
+
+// overlayScrollbars
+// "is a javascript scrollbar plugin which hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling."
 @import "~admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
+
+// Daterange picker
+// Date Range Picker can be attached to any webpage element to pop up two calendars for selecting dates, times, or predefined ranges like "Last 30 Days".
 @import "~admin-lte/plugins/daterangepicker/daterangepicker.css";
+
+// summernote
+// Super Simple WYSIWYG editor on Bootstrap
 @import "~admin-lte/plugins/summernote/summernote-bs4.css";
+
+// Google Font: Source Sans Pro
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700);

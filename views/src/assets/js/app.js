@@ -36,7 +36,8 @@
 global.moment = require('moment');
 global.Sparkline = require('../../../../node_modules/admin-lte/plugins/sparklines/sparkline');
 require('tempusdominus-bootstrap-4');
-//import 'fullcalendar';
+
+
 import 'moment-timezone';
 
 import "../../../../node_modules/admin-lte/plugins/jquery/jquery.js";
