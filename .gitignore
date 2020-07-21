@@ -1,4 +1,6 @@
 node_modules/
 assets/dist/
 temp_backup/
+views/dist/
 package.lock.json
+package-lock.json

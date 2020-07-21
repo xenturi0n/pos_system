@@ -34,32 +34,32 @@
 <script src="dist/js/demo.js"></script> */
 
 global.moment = require('moment');
-global.Sparkline = require('../../../node_modules/admin-lte/plugins/sparklines/sparkline');
+global.Sparkline = require('../../../../node_modules/admin-lte/plugins/sparklines/sparkline');
 require('tempusdominus-bootstrap-4');
 //import 'fullcalendar';
 import 'moment-timezone';
 
-import "../../../node_modules/admin-lte/plugins/jquery/jquery.js";
-import "../../../node_modules/admin-lte/plugins/jquery-ui/jquery-ui.js";
+import "../../../../node_modules/admin-lte/plugins/jquery/jquery.js";
+import "../../../../node_modules/admin-lte/plugins/jquery-ui/jquery-ui.js";
 
 $.widget.bridge('uibutton', $.ui.button);
 
-import "../../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js";
-import "../../../node_modules/admin-lte/plugins/chart.js/Chart.js";
-//import "../../../node_modules/admin-lte/plugins/sparklines/sparkline.js";
+import "../../../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js";
+import "../../../../node_modules/admin-lte/plugins/chart.js/Chart.js";
+//import "../../../../node_modules/admin-lte/plugins/sparklines/sparkline.js";
 
 //import "jquery-sparkline";
-import "../../../node_modules/admin-lte/plugins/jqvmap/jquery.vmap.js";
-import "../../../node_modules/admin-lte/plugins/jqvmap/maps/jquery.vmap.usa.js";
+import "../../../../node_modules/admin-lte/plugins/jqvmap/jquery.vmap.js";
+import "../../../../node_modules/admin-lte/plugins/jqvmap/maps/jquery.vmap.usa.js";
 
-import "../../../node_modules/admin-lte/plugins/jquery-knob/jquery.knob.min.js";
+import "../../../../node_modules/admin-lte/plugins/jquery-knob/jquery.knob.min.js";
 
 //import "moment";
 
-import "../../../node_modules/admin-lte/plugins/daterangepicker/daterangepicker.js";
+import "../../../../node_modules/admin-lte/plugins/daterangepicker/daterangepicker.js";
 //import "tempusdominus-bootstrap-4";
-import "../../../node_modules/admin-lte/plugins/summernote/summernote-bs4.js";
-import "../../../node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js";
-import "../../../node_modules/admin-lte/dist/js/adminlte.js";
-import "../../../node_modules/admin-lte/dist/js/pages/dashboard.js";
-import "../../../node_modules/admin-lte/dist/js/demo.js";
+import "../../../../node_modules/admin-lte/plugins/summernote/summernote-bs4.js";
+import "../../../../node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js";
+import "../../../../node_modules/admin-lte/dist/js/adminlte.js";
+import "../../../../node_modules/admin-lte/dist/js/pages/dashboard.js";
+import "../../../../node_modules/admin-lte/dist/js/demo.js";

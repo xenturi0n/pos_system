@@ -3,6 +3,7 @@ const glob = require("glob");
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 const TerserJSPlugin = require('terser-webpack-plugin');
 
@@ -27,9 +28,9 @@ var config = {
         app: path.resolve(PATHS.src, 'assets/js/app.js')
     },
     output:{
-        path: PATHS.dist,        
+        path: path.resolve(PATHS.dist, 'assets'),        
         filename: 'js/[name].[hash].js',
-        publicPath: '/views/assets/dist/',
+        publicPath: PATHS.dist,
     },
     module:{
         rules: [{
@@ -45,9 +46,10 @@ var config = {
         }]
     },
     plugins: [
+        new FixStyleOnlyEntriesPlugin(),
         new CleanWebpackPlugin(),        
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, "views/dist/index.html"),
+            filename: path.resolve(__dirname, "views/dist/index.php"),
             template: path.resolve(__dirname, "views/src/index.template.php"),
             excludeAssets: [/styleVendor.*.js/, /styleLocal.*.js/],
             minify: false,
