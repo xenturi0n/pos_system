@@ -35,14 +35,19 @@
 
 global.moment = require('moment');
 global.Sparkline = require('../../../../node_modules/admin-lte/plugins/sparklines/sparkline');
+
+//global.window.$ = window.jQuery = require('jquery');
+
 require('tempusdominus-bootstrap-4');
 
 
 import 'moment-timezone';
 
-import "../../../../node_modules/admin-lte/plugins/jquery/jquery.js";
+//import "../../../../node_modules/admin-lte/plugins/jquery/jquery.js";
+import "../../../../node_modules/jquery/src/jquery.js";
 import "../../../../node_modules/admin-lte/plugins/jquery-ui/jquery-ui.js";
 
+//import "../../../../node_modules/admin-lte/plugins/inputmask/inputmask.js";
 $.widget.bridge('uibutton', $.ui.button);
 
 import "../../../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js";

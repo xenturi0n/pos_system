@@ -10,6 +10,7 @@
 // Tempusdominus Bbootstrap 4
 // "Tempus Dominus is the successor to the very popular Eonasdan/bootstrap-datetimepicker. The plugin provide a robust date and time picker designed to integrate into your Bootstrap project."
 @import "~admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css";
+//@import "vendor/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4";
 
 // iCheck
 // "Highly customizable checkboxes and radio buttons for jQuery and Zepto."
@@ -21,11 +22,13 @@
 
 // Theme style
 // "Estilos para la plantilla admin-lte"
-@import "~admin-lte/dist/css/adminlte.min.css";
+//@import "~admin-lte/dist/css/adminlte.min.css";
+@import "vendor/adminLTE/adminLTE";
 
 // overlayScrollbars
 // "is a javascript scrollbar plugin which hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling."
 @import "~admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
+//@import "vendor/overlayScrollBars/overlayscrollbars.scss";
 
 // Daterange picker
 // Date Range Picker can be attached to any webpage element to pop up two calendars for selecting dates, times, or predefined ranges like "Last 30 Days".
