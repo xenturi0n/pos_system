@@ -30,7 +30,7 @@ var config = {
     output:{
         path: path.resolve(PATHS.dist, 'assets'),        
         filename: 'js/[name].[hash].js',
-        publicPath: PATHS.dist,
+        publicPath: '/views/dist/assets/',
     },
     module:{
         rules: [{
@@ -63,7 +63,7 @@ var config = {
             "window.$": "jquery"
         }),
         new MiniCssExtractPlugin({
-            filename: 'assets/css/[name].[contenthash].css'
+            filename: 'css/[name].[contenthash].css'
         })
     ]
 }
