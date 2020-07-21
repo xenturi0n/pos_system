@@ -13,8 +13,8 @@ const postcssPresetEnv = require('postcss-preset-env');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const PATHS = {
-    src: path.resolve(__dirname, "assets/src"),
-    dist: path.resolve(__dirname, "assets/dist")
+    src: path.resolve(__dirname, "views/src"),
+    dist: path.resolve(__dirname, "views/dist")
 };
 
 var config = {
@@ -22,14 +22,14 @@ var config = {
         ignored:[/node_modules/]
     },
     entry: {
-        styleVendor: path.resolve(PATHS.src, 'scss/styleVendor.scss'),
-        styleLocal: path.resolve(PATHS.src, 'scss/styleLocal.scss'),
-        app: path.resolve(PATHS.src, 'js/app.js')
+        styleVendor: path.resolve(PATHS.src, 'assets/scss/styleVendor.scss'),
+        styleLocal: path.resolve(PATHS.src, 'assets/scss/styleLocal.scss'),
+        app: path.resolve(PATHS.src, 'assets/js/app.js')
     },
     output:{
         path: PATHS.dist,        
         filename: 'js/[name].[hash].js',
-        publicPath: '/assets/dist/',
+        publicPath: '/views/assets/dist/',
     },
     module:{
         rules: [{
@@ -47,8 +47,8 @@ var config = {
     plugins: [
         new CleanWebpackPlugin(),        
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, "index.html"),
-            template: path.resolve(__dirname, "templates/index.html"),
+            filename: path.resolve(__dirname, "views/dist/index.html"),
+            template: path.resolve(__dirname, "views/src/index.template.php"),
             excludeAssets: [/styleVendor.*.js/, /styleLocal.*.js/],
             minify: false,
             inject: true
@@ -61,16 +61,12 @@ var config = {
             "window.$": "jquery"
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css'
+            filename: 'assets/css/[name].[contenthash].css'
         })
     ]
 }
 
 module.exports = (env, argv) => {    
-
-    // watchOptions: {
-    //     ignored: /node_modules/
-    // };
 
     // ***** MODO DESARROLLO *****
     if (argv.mode === 'development'){
