@@ -19,17 +19,10 @@
   
  
   <?php 
-    include "views/src/partials/sidebar.partial.php";
+    include "views/dist/partials/sidebar.partial.php";
   ?>
   
 
-  
-  
-
-  
-  
-
-  
 </div>
 <!-- ./wrapper -->
 

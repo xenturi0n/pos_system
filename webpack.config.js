@@ -55,6 +55,13 @@ var config = {
             minify: false,
             inject: true
         }),
+        new HtmlWebpackPlugin({
+            filename: path.resolve(__dirname, "views/dist/partials/sidebar.partial.php"),
+            template: path.resolve(__dirname, "views/src/partials/sidebar.partial.php"),
+        excludeAssets: [/\.(js|css)$/],
+            minify: false,
+            inject: true
+        }),
         new HtmlWebpackExcludeAssetsPlugin(),
         new Webpack.ProvidePlugin({
             $: "jquery",
