@@ -19,6 +19,7 @@
   
  
   <?php 
+    include "views/dist/partials/header.partial.php";
     include "views/dist/partials/sidebar.partial.php";
   ?>
   

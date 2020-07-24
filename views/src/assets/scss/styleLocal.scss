@@ -1,3 +1,11 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
 body{
     background-color: violet;
+}
+
+.dropdown-menu-right{
+    right: 5px !important;
 }

@@ -1,10 +1,10 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="/node_modules/admin-lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <a href="index3.html" class="brand-link logo-switch">
+      <img src=<%=require("../assets/img/template/icono-blanco.png")%> alt="Inventory System" class="brand-image-xl logo-xs">
+      <img src=<%=require("../assets/img/template/logo-blanco-lineal.png")%> alt="Inventory System" class="brand-image-xs logo-xl">
+      <!-- <span class="brand-text font-weight-light">Inventory System</span> -->
     </a>
 
     <!-- Sidebar -->
