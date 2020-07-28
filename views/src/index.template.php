@@ -8,7 +8,7 @@
 
   <title>Point Of Sale And Inventory System</title>
   
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-footer-fixed layout-navbar-fixed" style="height: auto;">
 <div class="wrapper">
   <!-- 
     Movil             320px
@@ -21,6 +21,8 @@
   <?php 
     include "views/dist/partials/header.partial.php";
     include "views/dist/partials/sidebar.partial.php";
+    include "views/dist/partials/start.partial.php";
+    include "views/dist/partials/footer.partial.php";
   ?>
   
 
